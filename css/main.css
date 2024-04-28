@@ -1,0 +1,346 @@
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFF5F6;
+}
+
+.header-nav {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.header-logo-text {
+    font-size: 36px;
+    font-weight: 700;
+    color: #240002;
+}
+
+.header-logo-img {
+    max-width: 100%;
+}
+
+.btn-header {}
+
+.btn-header-link {
+    background-color: #240002;
+    padding: 15px 27px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn-header-text {
+    color: #fff1f3;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-inner {
+    margin-top: 160px;
+}
+
+.header-inner-text {
+    max-width: 590px;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.header-inner-undertexter {
+    padding-top: 35px;
+    font-size: 24px;
+    font-weight: 400;
+    max-width: 550px;
+}
+
+.header-bubble-img {
+    padding-top: 120px;
+}
+
+.whitespace {
+    margin-top: 160px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 160px;
+}
+
+
+/* Как работает? */
+
+.heading-primary {
+    font-size: 32px;
+    padding: 40px;
+    text-align: center;
+}
+
+.accordion dl,
+.accordion-list {
+    border: 1px solid #ddd;
+
+    &:after {
+        content: "";
+        display: block;
+        height: 1em;
+        width: 100%;
+        background-color: darken(#FF2E50, 10%);
+    }
+}
+
+.accordion dd,
+.accordion__panel {
+    background-color: #FFF5F6;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.accordion p {
+    padding: 1em 2em 1em 2em;
+}
+
+.accordion {
+    position: relative;
+    background-color: #7c0014;
+}
+
+.howWork {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 40px 0 40px 0;
+    margin-bottom: 150px;
+}
+
+.accordionTitle,
+.accordion__Heading {
+    background-color: #FF2E50;
+    text-align: center;
+    font-weight: 700;
+    padding: 40px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.5s ease-in-out;
+    border-bottom: 1px solid darken(#FF2E50, 5%);
+
+    &:before {
+        content: "+";
+        font-size: 1.5em;
+        line-height: 0.5em;
+        float: left;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    &:hover {
+        background-color: darken(#FF2E50, 10%);
+    }
+}
+
+.accordionTitleActive,
+.accordionTitle.is-expanded {
+    background-color: darken(#FF2E50, 10%);
+
+    &:before {
+
+        transform: rotate(-225deg);
+    }
+}
+
+.accordionItem {
+    height: auto;
+    overflow: hidden;
+    
+
+    max-height: 50em;
+    transition: max-height 1s;
+
+
+    @media screen and (min-width:48em) {
+        max-height: 15em;
+        transition: max-height 0.5s;
+    }
+
+
+}
+
+.accordionItem.is-collapsed {
+    max-height: 0;
+}
+
+.no-js .accordionItem.is-collapsed {
+    max-height: auto;
+}
+
+.animateIn {
+    animation: accordionIn 0.45s normal ease-in-out both 1;
+}
+
+.animateOut {
+    animation: accordionOut 0.45s alternate ease-in-out both 1;
+}
+
+@keyframes accordionIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9) rotateX(-60deg);
+        transform-origin: 50% 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes accordionOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0.9) rotateX(-60deg);
+    }
+}
+
+/* цитата */
+
+.quote{
+margin-top: 200px;
+margin-bottom: 200px;
+
+}
+
+.quote-text{
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+/* кому аодходит тульский компас */
+
+.users{
+
+}
+
+.users-text{
+text-align: center;
+margin-bottom: 50px;
+font-size: 40px;
+}
+
+
+
+
+.users-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+.block-text{
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.fly{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 160px;
+}
+
+.place{
+
+}
+
+.place-wrapper{
+    display: flex;
+    justify-content: space-between;  
+    margin-bottom: 200px;
+}
+
+.mail{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+
+/* подвал */
+
+.footer-wrapper{
+    width: 1280px;
+    height: 450px;
+    background-color: #FF2E50;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+}
+
+.footer-text{
+    padding-top: 70px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.footer-btn{
+    background-color: #240002;
+    padding: 25px 80px;
+    color: #fff;
+    border-radius: 30px;
+    border: none;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.footer-btn-inner{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* адапатация */
+
+@media screen and (max-width: 768px) {
+    button {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }
+  
+  
+  @media screen and (max-width: 576px) {
+    button {
+      padding: 6px 12px;
+      font-size: 12px;
+    }
+  }
+
+  
